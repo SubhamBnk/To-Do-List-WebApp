@@ -1,0 +1,125 @@
+/* To-do-list section */
+:root {
+  --border-color: #3b66ff;
+  --to-do-bg-color: #f59f00;
+
+  --border-dimensions: 1.1px;
+  --border-style: solid;
+  --border-radius: 5px;
+}
+
+.to-do-list-section {
+  padding: 4.8rem;
+}
+
+.header {
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+
+.heading__primary {
+  font-size: 6.4rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-align: center;
+  border-bottom: var(--border-dimensions) var(--border-style)
+    var(--border-color);
+}
+
+.date {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.time {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.4px;
+}
+
+.to-do-list {
+  height: 100%;
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+}
+
+.to-do-list {
+  border-top: 0px;
+  background-color: var(--to-do-bg-color);
+  overflow: scroll;
+  height: 55rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.to-do-list-container {
+  box-shadow: 0px 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-dimensions);
+  margin: 4.8rem 0;
+}
+
+.todos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+  padding: 0 1.2rem 1.2rem 1.2rem;
+}
+
+.todo__elem {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #fff3bf;
+  list-style-type: none;
+  position: relative;
+}
+
+.todo__elem_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.todo__content {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* Form container */
+.form__container {
+  position: absolute;
+  width: 95%;
+  transition: all 0.3s;
+
+  /* Horizontally Center */
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 1.5rem);
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}

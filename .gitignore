@@ -1,0 +1,6 @@
+todo
+node_modules
+dist
+.parcel-cache
+.DS_Store
+dev/dist
